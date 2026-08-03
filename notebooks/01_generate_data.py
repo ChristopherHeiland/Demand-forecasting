@@ -1,8 +1,7 @@
 """
 Generate synthetic grocery sales data.
 
-No public dataset tracks food waste at the SKU level, so this simulates
-daily sales/waste across 5 stores and 10 products over two years, with
+Simulated daily sales/waste across 5 stores and 10 products over two years, with
 weekly and yearly seasonality plus noise.
 """
 
