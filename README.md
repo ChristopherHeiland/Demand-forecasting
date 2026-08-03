@@ -1,13 +1,13 @@
 # Demand Forecasting & Waste Reduction Analysis
 
-This project was built while applying for data analyst/data scientist roles in retail and logistics, turning raw sales data into forecasts and dashboards that ca  support real decisions
+This project was built while applying for data analyst/data scientist roles in retail and logistics as well as for fun, turning raw sales data into forecasts and dashboards that can support real decisions.
 
 ## Data
 
 Two complementary datasets were used:
 
 1. **Synthetic grocery dataset** (`data/grocery_sales.csv`) — generated to specifically model food waste (`units_wasted`). Built with realistic weekly/yearly seasonality and noise. See `notebooks/01_generate_data.py`.
-2. **Rossmann Store Sales** (Kaggle) — real-world daily sales data for ~1,115 drug stores over 2.5 years, including store attributes (type, assortment, competition distance, promotions). Used for the main analysis, SQL work, and forecasting model.
+2. **Rossmann Store Sales** (Kaggle) — real-world daily sales data for ~1,115 drug stores over 2.5 years, including store attributes (type, assortment, competition distance, promotions).
 
 ## Methodology
 
@@ -34,11 +34,10 @@ Built on the model's predictions and store-level summaries. Includes an actual-v
 
 ## Key findings
 - Promotions lift average sales by ~39%
-- Stores closer to competitors (<1km) show slightly *higher* average sales than distant ones — counter to the naive assumption, likely because competition clusters in high-traffic locations
+- Stores closer to competitors (<1km) show slightly higher average sales than distant ones — counter to the naive assumption, likely because competition clusters in high-traffic locations
 - Store identity and competition proximity matter more to the model than calendar features
-- ~13% of perishable goods went to waste in the synthetic waste model, mostly in dairy products
+- ~13% of perishable goods went to waste in the generated waste model, mostly in dairy products
 
 ## Tools used
-Python (pandas, scikit-learn, matplotlib), SQL (SQLite), Power BI Desktop
-
+Python (pandas, scikit-learn, matplotlib), SQL (SQLite), Power BI 
 
