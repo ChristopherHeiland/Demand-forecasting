@@ -20,9 +20,7 @@ OUTPUTS_DIR = PROJECT_ROOT / "outputs"
 
 df = pd.read_csv(DATA_DIR / "rossmann_clean.csv", parse_dates=["Date"])
 
-# A handful of rows are marked Open=1 but have Sales=0 - looks like a
-# recording glitch rather than real behaviour, and it wrecks MAPE
-# (division by ~0), so drop them.
+# A handful of rows are marked Open=1 but have Sales=0, so they are drop them.
 n_before = len(df)
 df = df[df["Sales"] > 0].copy()
 print(f"Dropped {n_before - len(df)} zero-sales-while-open rows")
