@@ -1,0 +1,14 @@
+# Large / generated data files - not meant for GitHub
+data/train.csv
+data/rossmann_clean.csv
+data/rossmann.db
+outputs/daily_sales.csv
+outputs/predictions_for_powerbi.csv
+
+# Python
+__pycache__/
+*.pyc
+
+# OS/editor clutter
+.DS_Store
+Thumbs.db
