@@ -74,5 +74,4 @@ Built on the model's predictions and store-level summaries. Includes an actual-v
 
 Python (pandas, scikit-learn, matplotlib), SQL (SQLite), Power BI Desktop
 
----
-*Built by [Your Name] — bachelor's in Data Science, currently pursuing a master's in Information Systems.*
+
