@@ -1,4 +1,5 @@
 # Demand Forecasting & Waste Reduction Analysis
+
 This project was built while applying for data analyst/data scientist roles in retail and logistics, turning raw sales data into forecasts and dashboards that ca  support real decisions
 
 ## Data
@@ -29,7 +30,7 @@ A `RandomForestRegressor` was trained on a chronological train/test split 80/20
 **5. Power BI dashboard**
 Built on the model's predictions and store-level summaries. Includes an actual-vs-predicted trend line, weekday sales pattern, store leaderboard, and live MAE/MAPE accuracy cards, with an interactive store selector.
 
-![Dashboard](dashboard/Dashboard WIP.png)
+![Dashboard](dashboard/Dashboard WIP.PNG)
 
 ## Key findings
 - Promotions lift average sales by ~39%
