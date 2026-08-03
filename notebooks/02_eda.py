@@ -62,4 +62,5 @@ plt.tight_layout()
 plt.savefig(OUTPUTS_DIR / "waste_rate.png", dpi=120)
 plt.close()
 
-print("\nCharts saved to outputs/")
+print("\nCharts saved to output folder"
+"/")
