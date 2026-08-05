@@ -1,4 +1,4 @@
-"""Load, clean, and join the Rossmann sales and store tables."""
+""" clean/join the Rossmann sales and store tables."""
 
 from pathlib import Path
 import pandas as pd
@@ -15,8 +15,7 @@ print(f"stores: {stores.shape}")
 print("\nMissing values in stores.csv:")
 print(stores.isna().sum())
 
-# CompetitionOpenSince* and Promo2* are missing, (no
-# competitor on record / store never joined Promo2) - not filled.
+# CompetitionOpenSince* and Promo2* are missing, (no competitor on record / store never joined Promo2)
 # CompetitionDistance has 3 genuine gaps, filled with the median.
 median_dist = stores["CompetitionDistance"].median()
 stores["CompetitionDistance"] = stores["CompetitionDistance"].fillna(median_dist)
@@ -27,7 +26,7 @@ print(f"\nJoined shape: {df.shape}")
 print("\nOpen vs closed:")
 print(df["Open"].value_counts())
 
-# Closed days always have Sales == 0 - not useful for a forecasting model,
+# Closed days always have Sales == 0
 df_open = df[df["Open"] == 1].copy()
 
 df_open["is_holiday"] = df_open["StateHoliday"].astype(str).apply(lambda x: x != "0")
