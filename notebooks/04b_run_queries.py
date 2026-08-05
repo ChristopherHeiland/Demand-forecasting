@@ -1,4 +1,4 @@
-"""Run the queries from sql/queries.sql and print results."""
+"""Run sql queries and print results."""
 
 from pathlib import Path
 import sqlite3
