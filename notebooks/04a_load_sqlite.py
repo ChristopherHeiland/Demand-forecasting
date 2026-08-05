@@ -1,5 +1,3 @@
-"""Load raw tables into SQLite for the SQL queries in sql/queries.sql."""
-
 from pathlib import Path
 import sqlite3
 import pandas as pd

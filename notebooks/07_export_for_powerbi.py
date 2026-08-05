@@ -1,4 +1,4 @@
-"""Export cleaned + predicted data for the Power BI dashboard."""
+"""Export cleaned + predicted data for Power BI."""
 
 from pathlib import Path
 import pandas as pd

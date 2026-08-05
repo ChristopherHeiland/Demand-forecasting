@@ -1,11 +1,3 @@
-"""
-Sales forecasting model.
-
-RandomForestRegressor - handles non-linear patterns without much tuning,
-no scaling needed, and feature_importances_ gives an interpretable read
-on what actually drives sales.
-"""
-
 from pathlib import Path
 import pandas as pd
 import numpy as np
@@ -20,7 +12,7 @@ OUTPUTS_DIR = PROJECT_ROOT / "outputs"
 
 df = pd.read_csv(DATA_DIR / "rossmann_clean.csv", parse_dates=["Date"])
 
-# A handful of rows are marked Open=1 but have Sales=0, so they are drop them.
+# rows with Open=1 but Sales=0, are dropped
 n_before = len(df)
 df = df[df["Sales"] > 0].copy()
 print(f"Dropped {n_before - len(df)} zero-sales-while-open rows")
@@ -40,8 +32,6 @@ feature_cols = [
 X = df[feature_cols]
 y = df["Sales"]
 
-# Chronological split - train on the past, test on the future. A random
-# split would let the model see "future" rows during training.
 df_sorted = df.sort_values("Date")
 split_date = df_sorted["Date"].quantile(0.8, interpolation="nearest")
 train_mask = df["Date"] <= split_date

@@ -1,4 +1,3 @@
-# Large / generated data files - not meant for GitHub
 data/train.csv
 data/rossmann_clean.csv
 data/rossmann.db
