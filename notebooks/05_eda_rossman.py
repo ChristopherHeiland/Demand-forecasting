@@ -1,4 +1,4 @@
-"""Quick EDA on the cleaned Rossmann data - trend, distribution, weekday pattern."""
+""" EDA on the cleaned Rossmann data - trend, distribution, weekday pattern."""
 
 from pathlib import Path
 import pandas as pd
