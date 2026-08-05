@@ -1,6 +1,6 @@
 # Demand Forecasting & Waste Reduction Analysis
 
-This project was built while applying for data analyst/data scientist roles in retail and logistics as well as for fun, turning raw sales data into forecasts and dashboards that can support real decisions.
+This project was built while applying for data analyst/data scientist roles as well as for fun, turning raw sales data into forecasts and dashboards that can support real decisions.
 
 ## Data
 
